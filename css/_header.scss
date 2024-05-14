@@ -1,0 +1,72 @@
+header {
+    width: 100%;
+
+    .headerBox {
+        position: fixed;
+        padding-top: 2rem;
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        z-index: 10;
+
+        .headerTitle {
+            width: 65%;
+            margin-left: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .headerNav {
+            width: 30%;
+            max-width: 400px;
+
+            nav {
+
+                ul {
+                    display: block;
+                    text-align: right;
+
+                    @media (width <=780px) {
+
+                    }
+
+                    li {
+                        margin-right: 1.5rem;
+                        color: white;
+
+
+                        @media (width <=780px) {}
+
+                        a {
+                            color: white;
+                            text-decoration: none;
+                            transition: 0.3s;
+                        }
+
+                        a:hover {
+                            color: #383838;
+                            transition: 0.3s;
+                        }
+                    }
+
+                    .on,
+                    .off{
+                        transition: 0.3s;
+                    }
+
+                    .on:hover,
+                    .off:hover{
+                        transition: 0.3s;
+                        color: #383838;
+                    }
+
+                    .action{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
