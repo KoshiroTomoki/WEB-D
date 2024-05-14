@@ -182,6 +182,7 @@ header .headerBox .headerNav nav ul li a {
 header .headerBox .headerNav nav ul li a:hover {
   color: #383838;
   transition: 0.3s;
+  border-bottom: #383838 1px solid;
 }
 header .headerBox .headerNav nav ul .on,
 header .headerBox .headerNav nav ul .off {
@@ -447,35 +448,17 @@ header .hamburger-menu {
 }
 
 html {
-  scroll-behavior: smooth;
   background-color: #F9F7F4;
 }
-html .hidden {
-  overflow: hidden;
-}
-@media (width <= 780px) {
-  html .hidden {
-    overflow: auto;
-  }
-}
 html body main {
-  height: 100%;
-}
-@media (width <= 780px) {
-  html body main {
-    overflow: auto;
-    scroll-snap-type: y mandatory;
-  }
+  height: 100vh;
+  scroll-snap-type: y mandatory;
 }
 html body main section {
+  scroll-snap-align: start;
   width: 100%;
-  height: 100%;
-  border-bottom: black 3px solid;
-}
-@media (width <= 780px) {
-  html body main section {
-    scroll-snap-align: start;
-  }
+  height: 100vh;
+  border-bottom: 3px solid black;
 }
 html body main section .title {
   text-align: center;

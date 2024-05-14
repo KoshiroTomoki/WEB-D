@@ -1,22 +1,45 @@
-// HTML要素を取得
+
 const offElement = document.querySelector('.off');
 const onElement = document.querySelector('.on');
 const body = document.querySelector('body');
+const main = document.querySelector('main');
+
+// クラスの切り替えを行う関数
+function toggleClass(elementToAdd, elementToRemove, overflowValue) {
+    elementToAdd.classList.add('action');
+    elementToRemove.classList.remove('action');
+    body.style.overflow = overflowValue;
+    main.style.overflow = overflowValue; // main要素にもoverflowを設定
+}
+
+// ウィンドウの幅が780px以下の場合にoverflowをautoにする関数
+function setOverflow() {
+    if (window.innerWidth <= 780) {
+        main.style.overflow = 'auto';
+    } else {
+        main.style.overflow = 'hidden';
+    }
+}
 
 // off要素がクリックされたときの処理
-offElement.addEventListener('click', () => {
-  // offにactionクラスを付与し、onのactionクラスを削除
-  offElement.classList.add('action');
-  onElement.classList.remove('action');
-  // bodyからhiddenクラスを削除
-  body.classList.remove('hidden');
-});
+offElement.addEventListener('click', () => toggleClass(offElement, onElement, 'auto'));
 
 // on要素がクリックされたときの処理
-onElement.addEventListener('click', () => {
-  // onにactionクラスを付与し、offのactionクラスを削除
-  onElement.classList.add('action');
-  offElement.classList.remove('action');
-  // bodyにhiddenクラスを追加
-  body.classList.add('hidden');
+onElement.addEventListener('click', () => toggleClass(onElement, offElement, 'hidden'));
+
+// ウィンドウのリサイズ時にoverflowを設定し直す
+window.addEventListener('resize', setOverflow);
+
+// 初期化時にoverflowを設定する
+setOverflow();
+
+// スムーズスクロールの処理
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        document.querySelector(targetId).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });

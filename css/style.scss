@@ -12,36 +12,19 @@
 @media (width <=780px) {}
 
 html {
-    scroll-behavior: smooth;
     background-color: #F9F7F4;
-
-    .hidden {
-        overflow: hidden;
-
-        @media (width <=780px) {
-            overflow: auto;
-        }
-    }
 
     body {
 
         main {
-            height: 100%;
-
-            @media (width <=780px) {
-                overflow: auto;
-                scroll-snap-type: y mandatory;
-            }
+            height: 100vh;
+            scroll-snap-type: y mandatory;
 
             section {
-                
-                @media (width <=780px) {
-                    scroll-snap-align: start;
-                }
-
+                scroll-snap-align: start;
                 width: 100%;
-                height: 100%;
-                border-bottom: black 3px solid;
+                height: 100vh;
+                border-bottom: 3px solid black;
 
                 .title {
                     text-align: center;
