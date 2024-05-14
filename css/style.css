@@ -375,6 +375,7 @@ header .hamburger-menu {
 @media (width <= 780px) {
   #top .topBar .nameBox .name01 {
     font-size: 4rem;
+    margin-top: 0rem;
   }
 }
 
