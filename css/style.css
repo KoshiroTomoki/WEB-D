@@ -359,7 +359,7 @@ html body .rightBar .rightBarText {
   width: 100%;
   max-width: 350px;
   position: absolute;
-  top: 45%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 0 0.5rem;
