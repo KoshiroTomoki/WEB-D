@@ -15,7 +15,7 @@ html {
     scroll-behavior: smooth;
     background-color: #F9F7F4;
 
-    .hidden{
+    .hidden {
         overflow: hidden;
 
         @media (width <=780px) {
@@ -28,7 +28,17 @@ html {
         main {
             height: 100%;
 
+            @media (width <=780px) {
+                overflow: auto;
+                scroll-snap-type: y mandatory;
+            }
+
             section {
+                
+                @media (width <=780px) {
+                    scroll-snap-align: start;
+                }
+
                 width: 100%;
                 height: 100%;
                 border-bottom: black 3px solid;
@@ -46,27 +56,29 @@ html {
 
                         @media (width <=780px) {
                             font-size: 2rem;
-                            
+
                         }
                     }
                 }
 
-                .scrollBottonTop{
+                .scrollBottonTop {
                     position: absolute;
                     top: 5%;
                     left: 35%;
                     transform: translate(-50%, -50%);
-            
+                    z-index: 100;
+
                     text-align: center;
                     line-height: 1rem;
                 }
 
-                .scrollBottonBottom{
+                .scrollBottonBottom {
                     position: absolute;
                     top: 95%;
                     left: 35%;
                     transform: translate(-50%, -50%);
-            
+                    z-index: 100;
+
                     text-align: center;
                     line-height: 1rem;
                 }
@@ -115,7 +127,7 @@ html {
             }
         }
 
-        .pc{
+        .pc {
 
             @media (width <=780px) {
                 display: none;
@@ -123,9 +135,10 @@ html {
 
         }
 
-        .mob{
+        .mob {
 
             display: none;
+
             @media (width <=780px) {
                 display: block;
             }

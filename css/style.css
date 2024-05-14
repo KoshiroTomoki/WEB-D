@@ -461,10 +461,21 @@ html .hidden {
 html body main {
   height: 100%;
 }
+@media (width <= 780px) {
+  html body main {
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+  }
+}
 html body main section {
   width: 100%;
   height: 100%;
   border-bottom: black 3px solid;
+}
+@media (width <= 780px) {
+  html body main section {
+    scroll-snap-align: start;
+  }
 }
 html body main section .title {
   text-align: center;
@@ -488,6 +499,7 @@ html body main section .scrollBottonTop {
   top: 5%;
   left: 35%;
   transform: translate(-50%, -50%);
+  z-index: 100;
   text-align: center;
   line-height: 1rem;
 }
@@ -496,6 +508,7 @@ html body main section .scrollBottonBottom {
   top: 95%;
   left: 35%;
   transform: translate(-50%, -50%);
+  z-index: 100;
   text-align: center;
   line-height: 1rem;
 }
