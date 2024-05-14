@@ -109,5 +109,21 @@ html {
                 }
             }
         }
+
+        .pc{
+
+            @media (width <=780px) {
+                display: none;
+            }
+
+        }
+
+        .mob{
+
+            display: none;
+            @media (width <=780px) {
+                display: block;
+            }
+        }
     }
 }

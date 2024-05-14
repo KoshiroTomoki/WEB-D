@@ -49,22 +49,30 @@
 
                     div {
                         text-align: center;
-                        margin-bottom: 3rem;
+
+
+                        a{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            margin-bottom: 3rem;
+                        }
                     }
                 }
             }
-        }
 
-        #service02 {
-            width: 100%;
-        }
+            #service02 {
+                width: 100%;
+            }
 
-        #service03 {
-            width: 100%;
-        }
+            #service03 {
+                width: 100%;
+            }
 
-        #service04 {
-            width: 100%;
+            #service04 {
+                width: 100%;
+            }
         }
     }
 }

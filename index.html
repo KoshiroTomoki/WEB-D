@@ -42,14 +42,16 @@
             <input type="checkbox" id="menu-btn-check">
             <label for="menu-btn-check" class="menu-btn"><span></span></label>
             <div class="menu-content">
-                <ul>
-                    <li><a href="#top">TOP</a></li>
-                    <li><a href="#service">SERVICE</a></li>
-                    <li><a href="#works">WORKS</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                    <li class="on action">scroll-on</li>
-                    <li class="off">scroll-off</li>
-                </ul>
+                <nav>
+                    <ul>
+                        <li><a href="#top">TOP</a></li>
+                        <li><a href="#service">SERVICE</a></li>
+                        <li><a href="#works">WORKS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                        <li class="on action">scroll-on</li>
+                        <li class="off">scroll-off</li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
@@ -91,7 +93,8 @@
                         <div class="serviceBox01">
                             <a href="#">
                                 <h3>運用</h3>
-                                <img src="images/service01.png" alt="パソコンの画像">
+                                <div class="pc"><img src="images/service01.png" alt="パソコンの画像"></div>
+                                <div class="mob"><img src="images/service01mob.png" alt="パソコンの画像"></div>
                             </a>
                         </div>
 
@@ -99,13 +102,15 @@
                             <div>
                                 <a href="#">
                                     <h3>HP作成</h3>
-                                    <img src="images/service02.png" alt="HPのアイコン画像">
+                                    <div class="pc"><img src="images/service02.png" alt="HPのアイコン画像"></div>
+                                    <div class="mob"><img src="images/service02mob.png" alt="HPのアイコン画像"></div>
                                 </a>
                             </div>
                             <div>
                                 <a href="#">
                                     <h3>各種印刷物</h3>
-                                    <img src="images/service03.png" alt="印刷物の画像">
+                                    <div class="pc"><img src="images/service03.png" alt="印刷物の画像"></div>
+                                    <div class="mob"><img src="images/service03mob.png" alt="印刷物の画像"></div>
                                 </a>
                             </div>
                         </div>
@@ -132,6 +137,13 @@
         </section>
 
         <section id="works">
+            <div class="scrollBottonTop">
+                <p><a href="#service">scroll<br>↑</a></p>
+            </div>
+
+            <div class="scrollBottonBottom">
+                <p><a href="#contact">scroll<br>↓</a></p>
+            </div>
 
             <div class="worksBar rightBar">
 
@@ -147,6 +159,9 @@
         </section>
 
         <section id="contact">
+            <div class="scrollBottonTop">
+                <p><a href="#works">scroll<br>↑</a></p>
+            </div>
 
             <div class="contactBar rightBar ">
                 <div class="rightBarText">

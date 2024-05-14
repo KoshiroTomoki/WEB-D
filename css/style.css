@@ -328,7 +328,7 @@ header .hamburger-menu {
 }
 #top .topTitle {
   position: absolute;
-  top: 65%;
+  top: 75%;
   left: 35%;
   transform: translate(-50%, -50%);
 }
@@ -420,15 +420,21 @@ header .hamburger-menu {
 }
 #service .sideScrollContainer01 #service01 .serviceBox .serviceBox02 div {
   text-align: center;
+}
+#service .sideScrollContainer01 #service01 .serviceBox .serviceBox02 div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin-bottom: 3rem;
 }
-#service .sideScrollContainer01 #service02 {
+#service .sideScrollContainer01 #service01 #service02 {
   width: 100%;
 }
-#service .sideScrollContainer01 #service03 {
+#service .sideScrollContainer01 #service01 #service03 {
   width: 100%;
 }
-#service .sideScrollContainer01 #service04 {
+#service .sideScrollContainer01 #service01 #service04 {
   width: 100%;
 }
 
@@ -527,5 +533,18 @@ html body .rightBar .rightBarText p {
 @media (width <= 500px) {
   html body .rightBar .rightBarText p {
     font-size: 0.8rem;
+  }
+}
+@media (width <= 780px) {
+  html body .pc {
+    display: none;
+  }
+}
+html body .mob {
+  display: none;
+}
+@media (width <= 780px) {
+  html body .mob {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */
