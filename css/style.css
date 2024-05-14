@@ -256,10 +256,10 @@ header .hamburger-menu {
     right: 0rem;
   }
   header .hamburger-menu #menu-btn-check:checked ~ .menu-content {
-    left: 70%;
+    left: 65%;
   }
   header .hamburger-menu .menu-content {
-    width: 30%;
+    width: 35%;
     height: 100%;
     position: fixed;
     top: 0;
@@ -453,6 +453,11 @@ html {
 html .hidden {
   overflow: hidden;
 }
+@media (width <= 780px) {
+  html .hidden {
+    overflow: auto;
+  }
+}
 html body main {
   height: 100%;
 }
@@ -475,7 +480,7 @@ html body main section .title h2 {
 }
 @media (width <= 780px) {
   html body main section .title h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 html body main section .scrollBottonTop {

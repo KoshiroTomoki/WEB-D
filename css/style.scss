@@ -17,6 +17,10 @@ html {
 
     .hidden{
         overflow: hidden;
+
+        @media (width <=780px) {
+            overflow: auto;
+        }
     }
 
     body {
@@ -41,7 +45,8 @@ html {
                         font-size: 3rem;
 
                         @media (width <=780px) {
-                            font-size: 2.5rem;
+                            font-size: 2rem;
+                            
                         }
                     }
                 }
