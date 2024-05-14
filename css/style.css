@@ -400,7 +400,7 @@ header .hamburger-menu {
 }
 @media (width <= 780px) {
   #service .sideScrollContainer01 #service01 .serviceBox {
-    top: 40%;
+    top: 48%;
   }
 }
 #service .sideScrollContainer01 #service01 .serviceBox h3 {
