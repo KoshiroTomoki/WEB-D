@@ -485,17 +485,22 @@ html body main section .title h2 {
 }
 html body main section .scrollBottonTop {
   position: absolute;
-  top: 5%;
-  left: 35%;
+  top: 95%;
+  left: 55%;
   transform: translate(-50%, -50%);
   z-index: 100;
   text-align: center;
   line-height: 1rem;
 }
+@media (width <= 780px) {
+  html body main section .scrollBottonTop {
+    top: 80%;
+  }
+}
 html body main section .scrollBottonBottom {
   position: absolute;
   top: 95%;
-  left: 35%;
+  left: 15%;
   transform: translate(-50%, -50%);
   z-index: 100;
   text-align: center;
@@ -505,6 +510,38 @@ html body main section .scrollBottonBottom {
   html body main section .scrollBottonBottom {
     top: 80%;
   }
+}
+html body main section .scrollBottonTop01 {
+  position: absolute;
+  top: 95%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  text-align: center;
+  line-height: 1rem;
+}
+@media (width <= 780px) {
+  html body main section .scrollBottonTop01 {
+    top: 80%;
+  }
+}
+html body main section .scrollBottonBottom01 {
+  position: absolute;
+  top: 95%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  text-align: center;
+  line-height: 1rem;
+}
+@media (width <= 780px) {
+  html body main section .scrollBottonBottom01 {
+    top: 80%;
+  }
+}
+html body main section a:hover {
+  transition: 0.5s;
+  color: #C9BC9C;
 }
 html body .rightBar {
   position: absolute;
