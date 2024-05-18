@@ -1,10 +1,11 @@
 #service {
-    // overflow-x: scroll;
     transition: 0.5s;
+    overflow-x: scroll;
+    // overflow: hidden;
 
     .sideScrollContainer01 {
-        // display: flex;
-        // width: 400%;
+        display: flex;
+        width: 400%;
         height: 100%;
 
         #service01 {
@@ -61,18 +62,18 @@
                     }
                 }
             }
+        }
 
-            #service02 {
-                width: 100%;
-            }
+        #service02 {
+            width: 100%;
+        }
 
-            #service03 {
-                width: 100%;
-            }
+        #service03 {
+            width: 100%;
+        }
 
-            #service04 {
-                width: 100%;
-            }
+        #service04 {
+            width: 100%;
         }
     }
 }

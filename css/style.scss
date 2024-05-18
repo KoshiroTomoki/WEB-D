@@ -46,7 +46,7 @@ html {
                 .scrollBottonTop {
                     position: absolute;
                     top: 95%;
-                    left: 55%;
+                    left: 15%;
                     transform: translate(-50%, -50%);
                     z-index: 100;
 
@@ -61,7 +61,7 @@ html {
                 .scrollBottonBottom {
                     position: absolute;
                     top: 95%;
-                    left: 15%;
+                    left: 55%;
                     transform: translate(-50%, -50%);
                     z-index: 100;
 
@@ -76,7 +76,7 @@ html {
                 .scrollBottonTop01 {
                     position: absolute;
                     top: 95%;
-                    left: 55%;
+                    left: 15%;
                     transform: translate(-50%, -50%);
                     z-index: 100;
 
@@ -91,7 +91,7 @@ html {
                 .scrollBottonBottom01 {
                     position: absolute;
                     top: 95%;
-                    left: 15%;
+                    left: 55%;
                     transform: translate(-50%, -50%);
                     z-index: 100;
 
@@ -157,11 +157,9 @@ html {
             @media (width <=780px) {
                 display: none;
             }
-
         }
 
         .mob {
-
             display: none;
 
             @media (width <=780px) {

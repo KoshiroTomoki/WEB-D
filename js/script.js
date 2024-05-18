@@ -3,21 +3,29 @@ const offElement = document.querySelector('.off');
 const onElement = document.querySelector('.on');
 const body = document.querySelector('body');
 const main = document.querySelector('main');
+const service = document.getElementById('service');
+const works = document.getElementById('works');
 
 // クラスの切り替えを行う関数
 function toggleClass(elementToAdd, elementToRemove, overflowValue) {
     elementToAdd.classList.add('action');
     elementToRemove.classList.remove('action');
     body.style.overflow = overflowValue;
-    main.style.overflow = overflowValue; // main要素にもoverflowを設定
+    main.style.overflow = overflowValue;
+    service.style.overflow = overflowValue;
+    works.style.overflow = overflowValue;
 }
 
 // ウィンドウの幅が780px以下の場合にoverflowをautoにする関数
 function setOverflow() {
     if (window.innerWidth <= 780) {
         main.style.overflow = 'auto';
+        service.style.overflow = 'auto';
+        works.style.overflow = 'auto';
     } else {
         main.style.overflow = 'hidden';
+        service.style.overflow = 'hidden';
+        works.style.overflow = 'hidden';
     }
 }
 
