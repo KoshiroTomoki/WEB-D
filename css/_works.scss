@@ -6,7 +6,7 @@
     img {
 
         @media (width <=780px) {
-            max-width: 200px;
+            max-width: 150px;
         }
     }
 
@@ -70,9 +70,10 @@
 
         .worksBox01 {
             position: absolute;
-            top: 40%;
+            top: 50%;
             left: 35%;
             transform: translate(-50%, -50%);
+            width: 70%;
 
             display: flex;
             justify-content: space-around;
@@ -85,17 +86,22 @@
 
             .worksBox0101 {
 
-                div {
-                    margin: 1rem 0.5rem;
+                div{
+                    margin-bottom: 5rem;
+
+                    @media (width <=780px) {
+                        margin-bottom: 2rem;
+                    }
                 }
             }
         }
 
         .worksBox02 {
             position: absolute;
-            top: 40%;
+            top: 50%;
             left: 35%;
             transform: translate(-50%, -50%);
+            width: 70%;
 
             display: flex;
             justify-content: space-around;
@@ -107,9 +113,13 @@
             }
 
             .worksBox0101 {
+                div{
+                    margin-bottom: 5rem;
 
-                div {
-                    margin: 1rem 0.5rem;
+                    
+                    @media (width <=780px) {
+                        margin-bottom: 2rem;
+                    }
                 }
             }
         }
